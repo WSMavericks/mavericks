@@ -1,144 +1,106 @@
-# 🌐 WALL STREET MAVERICKS — Portal de Backtests y Recursos
+<p align="center">
+  <img src="logo.png" alt="Wall Street Mavericks" width="220"/>
+</p>
 
-Bienvenido a la **sala central** de WALL STREET MAVERICKS 🚀. Aquí encontrarás:
-
-- 📊 Backtests de nuestros bots de trading  
-- 🤝 Afiliaciones y partners  
-- 🎓 Cursos y formaciones  
-- 📅 Calendario económico  
-- 🛠️ Recursos para contribuir o replicar nuestros resultados  
+<h1 align="center">WALL STREET MAVERICKS</h1>
+<h3 align="center">Portal de Backtests, Bots y Formación</h3>
 
 ---
 
-## 📌 Menú principal
+## Sobre este portal
 
-- <a href="#backtests">📊 Backtests y resultados</a>  
-- <a href="#bots">🤖 Bots y repositorios</a>  
-- <a href="#afiliaciones">🤝 Afiliaciones y partners</a>  
-- <a href="#cursos">🎓 Cursos y formaciones</a>  
-- <a href="#calendario">📅 Calendario económico</a>  
-- <a href="#reproducir">⚙️ Cómo reproducir un backtest</a>  
-- <a href="#contribuir">💡 Contribuir / Pull requests</a>  
-- <a href="#licencia">📜 Licencia y responsabilidad</a>  
-- <a href="#contacto">📬 Contacto</a>  
+Este repositorio centraliza:
 
----
+- 📊 Backtests de estrategias de trading algorítmico  
+- 🤖 Repositorios de bots con código reproducible  
+- 🎓 Material educativo y cursos de formación  
+- 📅 Calendario económico interactivo  
+- 🤝 Afiliaciones con plataformas y proveedores de datos  
 
-<details>
-<summary>📝 Sobre este portal</summary>
-
-Este repositorio actúa como **portal público** donde divulgamos:
-
-- ✅ Resultados de backtests (con código reproducible)  
-- 📚 Material formativo (cursos, guías, notebooks)  
-- 🔗 Enlaces a herramientas y proveedores de datos  
-- 📅 Un calendario económico con eventos relevantes  
-
-> ⚠️ Nota: Los resultados son **educativos**; no constituyen asesoramiento financiero.  
-
-</details>
+> **Nota**: Toda la información es educativa y no constituye asesoramiento financiero.
 
 ---
 
-<details>
-<summary>📊 Backtests y resultados</summary>
+## Backtests y resultados
 
-**Estructura de ejemplo:**
+Ejemplo de tabla resumen:
+
+| Bot          | Período   | Activo   | CAGR anual | Máx Drawdown | Sharpe | Estado       |
+|--------------|-----------|----------|------------|--------------|--------|--------------|
+| MR-BOT v1    | 2018–2024 | EURUSD H1 | 18.5%      | -12.4%       | 1.45   | Publicado ✅ |
+| TF-BOT v2    | 2017–2024 | SPX D    | 14.2%      | -20.1%       | 0.95   | En testing 🔎 |
+
+Ejemplo de estructura de carpetas:
+
+/backtests
+/mean-reversion-bot
+README.md
+backtest.ipynb
+results.csv
+equity_curve.png
+
+yaml
+Copiar código
+
+<p align="center">
+  <img src="assets/sample_equity_curve.png" alt="Ejemplo Equity Curve" width="500"/>
+</p>
+
+---
+
+## Cursos y formaciones
+
+Ofrecemos formaciones en:
+
+- **Introducción al backtesting reproducible** (Jupyter Notebooks, datasets)  
+- **Prevención de sobreajuste** (validación cruzada, walk-forward analysis)  
+- **Automatización** (de backtests a ejecución en tiempo real)  
+
+Cada curso contará con su propia landing page y materiales descargables.
+
+---
+
+## Calendario económico
+
+En `docs/calendario/` encontrarás:
+
+- Scripts para consumir APIs públicas de datos económicos  
+- Tablas filtrables (HTML)  
+- Exportación a CSV  
+
+<p align="center">
+  <img src="assets/sample_calendar.png" alt="Calendario Económico" width="600"/>
+</p>
+
+---
+
+## Cómo reproducir un backtest
 
 ```bash
-/backtests
-  /mean-reversion-bot
-    README.md
-    backtest.ipynb
-    results.csv
-    equity_curve.png
-  /trend-following-bot
-    README.md
-    backtest.py
-    report.html
-Ejemplo de tabla:
-
-🤖 Bot	📅 Período	📈 Activo	🚀 CAGR anual	📉 Máx DD	📊 Sharpe	🔎 Estado
-MR-BOT v1	2018–2024	EURUSD H1	18.5%	-12.4%	1.45	✅ Publicado
-TF-BOT v2	2017–2024	SPX D	14.2%	-20.1%	0.95	🧪 En testing
-
-</details>
-<details> <summary>🤖 Bots y repositorios</summary>
-🛠️ Código modular (requirements.txt / pyproject.toml)
-
-✅ Tests y ejemplos de uso
-
-📓 Notebooks de exploración
-
-</details>
-<details> <summary>🤝 Afiliaciones y partners</summary>
-📊 Proveedor de datos X — calidad intradiaria
-
-⚡ Plataforma de ejecución Y — latencia optimizada
-
-</details>
-<details> <summary>🎓 Cursos y formaciones</summary>
-🟢 Introducción al backtesting reproducible
-
-🟡 Optimización y prevención de sobreajuste
-
-🔵 Automatización y despliegue
-
-</details>
-<details> <summary>📅 Calendario económico</summary>
-Incluye un calendario filtrable por país, impacto y tipo de evento.
-
-📌 Se mostrará:
-
-Tabla resumida (próximos 7 días)
-
-Enlace a vista interactiva
-
-</details>
-<details> <summary>⚙️ Cómo reproducir un backtest</summary>
-bash
-Copiar código
 git clone https://github.com/tu-usuario/mavericks-portal.git
+cd mavericks-portal
 python -m venv .venv
-source .venv/bin/activate   # macOS/Linux
-.\\.venv\\Scripts\\activate   # Windows
+source .venv/bin/activate  # macOS/Linux
+.venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 python run_backtest.py --bot mean-reversion --from 2018-01-01 --to 2024-12-31
-📂 Revisa results/ y abre report.html 🚀
+Los resultados se guardarán en /results con reportes en HTML/PDF.
 
-</details>
-<details> <summary>💡 Contribuir / Pull requests</summary>
-Haz fork del repo
+Contribuir
+Haz un fork del repositorio
 
 Crea una rama feature/tu-idea
 
-Añade tests/documentación
+Documenta y añade tests mínimos
 
-Abre un PR con tu propuesta
+Envía un Pull Request
 
-</details>
-<details> <summary>📜 Licencia y responsabilidad</summary>
-📄 Licencia: MIT
+Licencia y responsabilidad
+Licencia: MIT
 
-⚠️ Contenido educativo, no asesoramiento financiero
+Todo el contenido es educativo. Los resultados no son recomendación financiera.
 
-</details>
-<details> <summary>📬 Contacto</summary>
-📱 Instagram / TikTok: @wallstreetmavericks
+Contacto
+Instagram / TikTok: @wallstreetmavericks
 
-📧 Email: contacto@wallstreetmavericks.example
-
-</details>
-✨ Hecho con ❤️ por WALL STREET MAVERICKS
-
-css
-Copiar código
-
-Esto te da un README con **acordeones desplegables**, ideal para mantenerlo limpio y navegable.  
-
-¿Quieres que te lo deje aplicado directamente en tu documento del canvas para que solo copies y pegues en tu repo?
-
-
-
-
-
+Email: contacto@wallstreetmavericks.example
