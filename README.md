@@ -1,45 +1,47 @@
-# WALL STREET MAVERICKS — Portal de Backtests y Recursos
+# 🌐 WALL STREET MAVERICKS — Portal de Backtests y Recursos
 
-Bienvenido a la **sala central** de WALL STREET MAVERICKS: aquí encontrarás los backtests de nuestros bots de trading, afiliaciones y partners, cursos y formaciones, calendario económico, y recursos para contribuir o replicar nuestros resultados.
+Bienvenido a la **sala central** de WALL STREET MAVERICKS 🚀. Aquí encontrarás:
 
----
-
-## Índice
-
-1. [Sobre este portal](#sobre-este-portal)
-2. [Backtests y resultados](#backtests-y-resultados)
-3. [Bots y repositorios](#bots-y-repositorios)
-4. [Afiliaciones y partners](#afiliaciones-y-partners)
-5. [Cursos y formaciones](#cursos-y-formaciones)
-6. [Calendario económico](#calendario-económico)
-7. [Cómo reproducir un backtest](#cómo-reproducir-un-backtest)
-8. [Contribuir / Pull requests](#contribuir--pull-requests)
-9. [Licencia y responsabilidad](#licencia-y-responsabilidad)
-10. [Contacto](#contacto)
+- 📊 Backtests de nuestros bots de trading  
+- 🤝 Afiliaciones y partners  
+- 🎓 Cursos y formaciones  
+- 📅 Calendario económico  
+- 🛠️ Recursos para contribuir o replicar nuestros resultados  
 
 ---
 
-## Sobre este portal
+## 📌 Menú principal
+
+- <a href="#backtests">📊 Backtests y resultados</a>  
+- <a href="#bots">🤖 Bots y repositorios</a>  
+- <a href="#afiliaciones">🤝 Afiliaciones y partners</a>  
+- <a href="#cursos">🎓 Cursos y formaciones</a>  
+- <a href="#calendario">📅 Calendario económico</a>  
+- <a href="#reproducir">⚙️ Cómo reproducir un backtest</a>  
+- <a href="#contribuir">💡 Contribuir / Pull requests</a>  
+- <a href="#licencia">📜 Licencia y responsabilidad</a>  
+- <a href="#contacto">📬 Contacto</a>  
+
+---
+
+<details>
+<summary>📝 Sobre este portal</summary>
 
 Este repositorio actúa como **portal público** donde divulgamos:
 
-* Resultados de backtests de nuestros bots (metodología y código reproducible).
-* Material formativo (cursos, guías, notebooks).
-* Enlaces a afiliaciones, herramientas y proveedores de datos.
-* Un calendario económico integrado con eventos relevantes para trading.
+- ✅ Resultados de backtests (con código reproducible)  
+- 📚 Material formativo (cursos, guías, notebooks)  
+- 🔗 Enlaces a herramientas y proveedores de datos  
+- 📅 Un calendario económico con eventos relevantes  
 
-> Nota: los resultados mostrados son educativos y de investigación; no constituyen asesoramiento financiero.
+> ⚠️ Nota: Los resultados son **educativos**; no constituyen asesoramiento financiero.  
+
+</details>
 
 ---
 
-## Backtests y resultados
-
-Cada backtest tiene su propia carpeta con:
-
-* `README.md` con resumen ejecutivo (periodo, activo, timeframe, parámetros).
-* Código reproducible (Python / Jupyter notebooks).
-* CSV con métricas (CAGR, drawdown máximo, Sharpe, trades, etc.).
-* Gráficas y reportes en HTML/PDF.
+<details>
+<summary>📊 Backtests y resultados</summary>
 
 **Estructura de ejemplo:**
 
@@ -54,121 +56,89 @@ Cada backtest tiene su propia carpeta con:
     README.md
     backtest.py
     report.html
-```
+Ejemplo de tabla:
 
-**Ejemplo de tabla de resumen (en README principal):**
+🤖 Bot	📅 Período	📈 Activo	🚀 CAGR anual	📉 Máx DD	📊 Sharpe	🔎 Estado
+MR-BOT v1	2018–2024	EURUSD H1	18.5%	-12.4%	1.45	✅ Publicado
+TF-BOT v2	2017–2024	SPX D	14.2%	-20.1%	0.95	🧪 En testing
 
-| Bot       | Período   | Activo    | CAGR anual | Máx Drawdown | Sharpe | Estado        |
-| --------- | --------- | --------- | ---------- | ------------ | ------ | ------------- |
-| MR-BOT v1 | 2018–2024 | EURUSD H1 | 18.5%      | -12.4%       | 1.45   | ✅ Publicado   |
-| TF-BOT v2 | 2017–2024 | SPX D     | 14.2%      | -20.1%       | 0.95   | 🧪 En testing |
+</details>
+<details> <summary>🤖 Bots y repositorios</summary>
+🛠️ Código modular (requirements.txt / pyproject.toml)
 
----
+✅ Tests y ejemplos de uso
 
-## Bots y repositorios
+📓 Notebooks de exploración
 
-Cada bot tiene un repositorio/paquete propio con:
+</details>
+<details> <summary>🤝 Afiliaciones y partners</summary>
+📊 Proveedor de datos X — calidad intradiaria
 
-* Código modular y requisitos (`requirements.txt` / `pyproject.toml`).
-* Tests mínimos y ejemplo de uso.
-* Notebooks para exploración de parámetros.
+⚡ Plataforma de ejecución Y — latencia optimizada
 
-**Tips para mantener repositorios de bots:**
+</details>
+<details> <summary>🎓 Cursos y formaciones</summary>
+🟢 Introducción al backtesting reproducible
 
-* Versiona los parámetros (semántico: v1.0.0).
-* Incluye seeds y versiones de librerías para reproducibilidad.
-* Documenta la fuente de datos (proveedor, símbolo, ajuste por dividendos, timezone).
+🟡 Optimización y prevención de sobreajuste
 
----
+🔵 Automatización y despliegue
 
-## Afiliaciones y partners
+</details>
+<details> <summary>📅 Calendario económico</summary>
+Incluye un calendario filtrable por país, impacto y tipo de evento.
 
-En esta sección listamos las plataformas y servicios con los que trabajamos (con transparencia sobre los beneficios de afiliación):
+📌 Se mostrará:
 
-* Proveedor de datos X — calidad intradiaria (enlace y nota sobre coste).
-* Plataforma de ejecución Y — latencia y coste por orden.
+Tabla resumida (próximos 7 días)
 
-> Transparencia: siempre indicaremos si recibimos comisiones por enlaces de afiliado.
+Enlace a vista interactiva
 
----
+</details>
+<details> <summary>⚙️ Cómo reproducir un backtest</summary>
+bash
+Copiar código
+git clone https://github.com/tu-usuario/mavericks-portal.git
+python -m venv .venv
+source .venv/bin/activate   # macOS/Linux
+.\\.venv\\Scripts\\activate   # Windows
+pip install -r requirements.txt
+python run_backtest.py --bot mean-reversion --from 2018-01-01 --to 2024-12-31
+📂 Revisa results/ y abre report.html 🚀
 
-## Cursos y formaciones
+</details>
+<details> <summary>💡 Contribuir / Pull requests</summary>
+Haz fork del repo
 
-Ofrecemos cursos y mini-bootcamps orientados a traders cuantitativos:
+Crea una rama feature/tu-idea
 
-* **Introducción al backtesting reproducible** — notebooks, datasets, ejercicios.
-* **Optimización y prevención de sobreajuste** — técnicas y checklists.
-* **Automatización y despliegue** — desde pruebas a live trading.
+Añade tests/documentación
 
-Cada curso tendrá su propia landing con temario, duración y requisitos.
+Abre un PR con tu propuesta
 
----
+</details>
+<details> <summary>📜 Licencia y responsabilidad</summary>
+📄 Licencia: MIT
 
-## Calendario económico
+⚠️ Contenido educativo, no asesoramiento financiero
 
-Integraremos un calendario económico con filtros por país, impacto y tipo de evento. En `docs/calendario/` habrá scripts que consumen APIs públicas (o archivos CSV actualizados) y generan vistas filtrables.
+</details>
+<details> <summary>📬 Contacto</summary>
+📱 Instagram / TikTok: @wallstreetmavericks
 
-**Cómo presentarlo:**
+📧 Email: contacto@wallstreetmavericks.example
 
-* Tabla resumida en README (próximos 7 días).
-* Link a una vista interactiva (HTML) dentro del repositorio.
+</details>
+✨ Hecho con ❤️ por WALL STREET MAVERICKS
 
----
+css
+Copiar código
 
-## Cómo reproducir un backtest
+Esto te da un README con **acordeones desplegables**, ideal para mantenerlo limpio y navegable.  
 
-1. Clona el repo:
+¿Quieres que te lo deje aplicado directamente en tu documento del canvas para que solo copies y pegues en tu repo?
 
-   ```bash
-   git clone https://github.com/tu-usuario/mavericks-portal.git
-   ```
-2. Crea y activa un entorno virtual:
 
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # macOS / Linux
-   .\.venv\Scripts\activate  # Windows
-   pip install -r requirements.txt
-   ```
-3. Descarga los datos (script `scripts/download_data.py` o indica proveedor).
-4. Ejecuta:
 
-   ```bash
-   python run_backtest.py --bot mean-reversion --from 2018-01-01 --to 2024-12-31
-   ```
-5. Revisa `results/` y el `report.html` generado.
 
----
 
-## Contribuir / Pull requests
-
-¡Contribuciones bienvenidas! Para colaborar:
-
-1. Haz fork del repo.
-2. Crea una rama `feature/tu-idea`.
-3. Añade tests mínimos y documentación.
-4. Crea un PR describiendo el cambio y su impacto en resultados.
-
-Añade un issue antes de implementar cambios grandes en la metodología de backtesting.
-
----
-
-## Licencia y responsabilidad
-
-* Licencia: [MIT] (o la que prefieras).
-* Disclaimer: todo contenido es educativo; no somos asesores financieros. Los usuarios asumen la responsabilidad de usar los resultados.
-
----
-
-## Contacto
-
-* Instagram / TikTok: `@wallstreetmavericks`
-* Email: `contacto@wallstreetmavericks.example`
-
----
-
-### Última nota
-
-Esta portada sirve como **plantilla** y guía de organización para el portal en GitHub.
-
-> Hecho con ❤️ por WALL STREET MAVERICKS
